@@ -1,0 +1,77 @@
+<%= form_with(model: employee) do |form| %>
+  <% if employee.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
+
+      <ul>
+        <% employee.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
+
+  <div>
+    <%= form.label :ime, style: "display: block" %>
+    <%= form.text_field :ime, required: true %>
+  </div>
+
+  <div>
+    <%= form.label :prezime, style: "display: block" %>
+    <%= form.text_field :prezime, required: true %>
+  </div>
+
+  <div>
+    <%= form.label :spol, style: "display: block" %>
+    <%= form.select :spol, [["muški"], ["ženski"]] %>
+  </div>
+
+  <div>
+    <%= form.label :godina_rodjenja, style: "display: block" %>
+    <%= form.text_field :godina_rodjenja, required: true %>
+  </div>
+
+  <div>
+    <%= form.label :pocetak_rada, style: "display: block" %>
+    <%= form.text_field :pocetak_rada, required: true %>
+  </div>
+
+  <div>
+    <%= form.label :vrsta_ugovora, style: "display: block" %>
+    <%= form.select :vrsta_ugovora, [["određeno"], ["neodređeno"]] %>
+  </div>
+
+  <div>
+    <%= form.label :trajanje_ugovora, style: "display: block" %>
+    <%= form.text_field :trajanje_ugovora %>
+  </div>
+
+  <div>
+    <%= form.label :odjel, style: "display: block" %>
+    <%= form.text_field :odjel %>
+  </div>
+
+  <div>
+    <%= form.label :broj_dana_godisnjeg_odmora, style: "display: block" %>
+    <%= form.number_field :broj_dana_godisnjeg_odmora %>
+  </div>
+
+  <div>
+    <%= form.label :broj_slobodnih_dana, style: "display: block" %>
+    <%= form.number_field :broj_slobodnih_dana %>
+  </div>
+
+  <div>
+    <%= form.label :broj_dana_placenog_dopusta, style: "display: block" %>
+    <%= form.number_field :broj_dana_placenog_dopusta %>
+  </div>
+  <br>
+  <div>
+    <%= form.submit :Submit, class: "btn btn-default btn-success"%>
+  </div>
+<% end %>

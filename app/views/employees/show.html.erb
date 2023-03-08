@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+<div class="card">
+  <%= render @employee %>
+</div>
+
+<hr>
+
+<div class="nav">
+  <%= link_to "Uredi", edit_employee_path(@employee), :class => "btn btn-info" %>
+  <%= link_to "Natrag na listu", employees_path, :class => "btn btn-warning"%>
+  <%= button_to "Otkaz", @employee, method: :delete , :class => "btn btn-danger"%>
+</div>
+

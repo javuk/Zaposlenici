@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ime: MyString
+  prezime: MyString
+  spol: MyString
+  godina_rodjenja: MyString
+  pocetak_rada: MyString
+  vrsta_ugovora: MyString
+  trajanje_ugovora: MyString
+  odjel: MyString
+  broj_dana_godisnjeg_odmora: 1
+  broj_slobodnih_dana: 1
+  broj_dana_placenog_dopusta: 1
+
+two:
+  ime: MyString
+  prezime: MyString
+  spol: MyString
+  godina_rodjenja: MyString
+  pocetak_rada: MyString
+  vrsta_ugovora: MyString
+  trajanje_ugovora: MyString
+  odjel: MyString
+  broj_dana_godisnjeg_odmora: 1
+  broj_slobodnih_dana: 1
+  broj_dana_placenog_dopusta: 1

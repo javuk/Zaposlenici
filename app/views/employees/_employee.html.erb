@@ -1,0 +1,66 @@
+
+<section id="about-section" class="pt-5 pb-5">
+  <div class="container wrapabout">
+    <div class="red"></div>
+    <div class="row">
+      <div class="col-lg-6 align-items-center justify-content-left d-flex mb-5 mb-lg-0">
+        <div class="blockabout">
+          <div class="blockabout-inner text-center text-sm-start">
+            <div class="title-big pb-3 mb-3">
+              <h3>INFO</h3>
+            </div>
+            <p>
+              <strong>Ime:</strong>
+              <%= employee.ime %>
+            </p>
+            <p>
+              <strong>Prezime:</strong>
+              <%= employee.prezime %>
+            </p>
+            <p>
+              <strong>Spol:</strong>
+              <%= employee.spol %>
+            </p>
+            <p>
+              <strong>Godina rodjenja:</strong>
+              <%= employee.godina_rodjenja %>
+            </p>
+            <p>
+              <strong>Pocetak rada:</strong>
+              <%= employee.pocetak_rada %>
+            </p>
+            <p>
+              <strong>Vrsta ugovora:</strong>
+              <%= employee.vrsta_ugovora %>
+            </p>
+            <p>
+              <strong>Trajanje ugovora:</strong>
+              <%= employee.trajanje_ugovora %>
+            </p>
+            <p>
+              <strong>Odjel:</strong>
+              <%= employee.odjel %>
+            </p>
+            <p>
+              <strong>Broj dana godisnjeg odmora:</strong>
+              <%= employee.broj_dana_godisnjeg_odmora %>
+            </p>
+            <p>
+              <strong>Broj slobodnih dana:</strong>
+              <%= employee.broj_slobodnih_dana %>
+            </p>
+            <p>
+              <strong>Broj dana placenog dopusta:</strong>
+              <%= employee.broj_dana_placenog_dopusta %>
+            </p>
+          </div>
+        </div>  
+      </div>
+        <div class="col-lg-6 mt-5 mt-lg-0">
+          <figure class="potoaboutwrap">
+            <%= image_tag(employee.image_as_profile_pic)%>
+          </figure>
+        </div>
+      </div>
+  </div>
+</section>

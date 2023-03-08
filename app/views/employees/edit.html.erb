@@ -1,0 +1,10 @@
+<h1>Editing employee</h1>
+
+<%= render "form", employee: @employee %>
+
+<br>
+
+<div>
+  <%= link_to "Detalji zaposlenika", @employee, :class => "btn btn-info" %>
+  <%= link_to "Nazad na listu", employees_path, :class => "btn btn-warning" %>
+</div>
